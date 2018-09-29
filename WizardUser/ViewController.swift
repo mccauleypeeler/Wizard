@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var bigButton: UIImageView!
@@ -19,6 +20,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
 //        checkIfUserLoggedIn()
     }

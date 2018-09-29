@@ -25,7 +25,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
 //        self.currentUser = Auth.auth().currentUser!
 //        loadData(currentUserObject: currentUser!)
         numberInput.delegate = self
@@ -71,6 +71,7 @@ class SignInViewController: UIViewController, UITextFieldDelegate {
             }
             // Sign in using the verificationID and the code sent to the user
             // ...
+            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
         }
         
 //        self.collection.document(self.firestoreUserID).updateData([
